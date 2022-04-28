@@ -1,31 +1,26 @@
-# Adonis fullstack application
+# PreCondiciones
+    *Crear una base de datos en MySQL con nombre adonis.
+    *Crear el archivo .env igual al .env.example
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+# Instucciones
+    *npm install
+    *adonis migration:run
+    *adonis serve (para correr)
 
-1. Bodyparser
-2. Session
-3. Authentication
-4. Web security middleware
-5. CORS
-6. Edge template engine
-7. Lucid ORM
-8. Migrations and seeds
+# Routes
 
-## Setup
+## Traer todos los productos
+    *http://localhost:3333/api/products
 
-Use the adonis command to install the blueprint
+## Traer un producto con un id especifico
+    *http://localhost:3333/api/products/:id   
+    *http://localhost:3333/api/products/1
 
-```bash
-adonis new yardstick
-```
+## Crear un producto
+    *http://localhost:3333/api/products
 
-or manually clone the repo and then run `npm install`.
+## Actualizar un producto por id
+    *http://localhost:3333/api/products/:id    
 
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
-```
+## Eliminar un producto especifico por id
+    *http://localhost:3333/api/products/:id   
